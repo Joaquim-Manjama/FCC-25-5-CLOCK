@@ -1,0 +1,93 @@
+* {
+  user-select: none;
+}
+
+.container {
+  margin: auto;
+  width: 80vw;
+  height: 80vh;
+  background-color: #1e1e1e;
+  display: flex;
+  flex-direction: column;
+}
+
+svg {
+  width: 39px;
+  height: 39px;
+}
+
+.options {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 36px;
+}
+
+#break-label, #session-label{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#break-label > span, #session-label > span {
+  display: flex;
+  gap: 4vw;
+}
+
+#timer-label {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  gap: 1vh;
+  margin-top: -30px;
+}
+
+#time-left{
+  font-size: 128px;
+}
+
+.actions{
+  margin: auto;
+  background-color: #d9d9d9;
+  width: 143px;
+  height: 55px;
+  border-radius: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+  margin-top:  -20px;
+  box-shadow: -2px -2px 10px rgba(255 ,255, 255, 0.2), 4px 4px 10px rgb(0 ,0, 0);
+  transition: 1s;
+}
+
+.actions:hover{
+  transform: translateY(-6px);
+}
+
+.icon:hover {
+  transform: translateY(-3px);
+  transition: 1s;
+  cursor: pointer;
+}
+
+.arrow {
+  transform: scale(1.5);
+  transition: 1s;
+}
+
+.arrow:hover {
+  color: #ffffff;
+  transform: scale(1.6);
+  cursor: pointer;
+}
+
+.red {
+  color: rgb(165, 51, 43);
+}
